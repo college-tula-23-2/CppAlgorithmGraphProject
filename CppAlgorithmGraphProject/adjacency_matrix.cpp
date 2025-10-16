@@ -153,6 +153,11 @@ std::vector<std::string> adjacency_matrix::neighbors_names(std::string vertex)
 	return this->neighbors_names(vertex_index(vertex));
 }
 
+int adjacency_matrix::weight_edge(int vertex_one, int vertex_two)
+{
+	return _matrix[vertex_one][vertex_two];
+}
+
 
 
 void adjacency_matrix::remove_edge(int vertex_one, int vertex_two)

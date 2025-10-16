@@ -45,6 +45,8 @@ public:
 	std::vector<std::string> neighbors_names(int vertex) override;
 	std::vector<std::string> neighbors_names(std::string vertex) override;
 
+	int weight_edge(int vertex_one, int vertex_two);
+
 	friend std::ostream& operator<<(
 		std::ostream& out,
 		const adjacency_matrix& graph);
